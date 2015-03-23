@@ -1,0 +1,124 @@
+/* 
+    Document   : css1
+    Created on : Sep 23, 2013, 2:20:54 PM
+    Author     : kedar
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body {
+ font-family: helvetica, arial, sans-serif;
+ background: #e3e3e3;
+ text-align: center;
+}
+
+/* MENU */
+
+
+ li.top,a.top {
+ float: left;
+}
+
+ li.top {
+ list-style: none;
+ position: relative;
+}
+
+ li.top a {
+ padding: 1em 2em;
+ text-decoration: none;
+ color: white;
+ background: #292929;
+ background: -moz-linear-gradient(top, black, #3c3c3c 1px, #292929 25px);
+ background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #3c3c3c), to(#292929));
+ border-right: 1px solid #3c3c3c;
+ border-left: 1px solid #292929;
+ border-bottom: 1px solid #232323;
+ border-top: 1px solid #545454;
+}
+
+ li.top a:hover {
+ background: #2a0d65;
+ background: -moz-linear-gradient(top, #11032e, #2a0d65);
+ background: -webkit-gradient(linear, left top, left bottom, from(#11032e), to(#2a0d65));
+}
+
+
+/* Submenu */
+
+.hasChildren {
+	position: absolute;
+	width: 5px; height: 5px;
+	background: black;
+	right : 0;
+	bottom: 0;
+}
+
+ li.top ul.top {
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 100%;
+ padding: 0; margin: 0;
+}
+     li.left{clear:both;}
+
+ul.left{display:block;}
+
+ .top li:hover > ul {
+ display: block;
+}
+li.left a{
+    padding: 1em 2em;
+ text-decoration: none;
+ color: white;
+ background: #292929;
+ background: -moz-linear-gradient(top, black, #3c3c3c 1px, #292929 25px);
+ background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #3c3c3c), to(#292929));
+ border-right: 1px solid #3c3c3c;
+ border-left: 1px solid #292929;
+ border-bottom: 1px solid #232323;
+ border-top: 1px solid #545454;
+}
+ 
+
+ a.left{color: blue;text-decoration: none;display: table;}
+
+ li.left{display:block;color: blue;text-decoration: none;display: table;}
+
+.left:target {display:block;position:fixed;left:50px;top:100px;}
+
+.top li ul li:hover ul {
+ left: 100%;
+ top: 0;
+}
+#nav li ul li {
+ _display: inline; /* for IE6 */
+}
+
+#nav li ul li a {
+ width: 150px;
+ display: block;
+}
+
+/* SUBSUB Menu */
+
+#nav li ul li ul {
+ display: none;
+}
+
+#nav li ul li:hover ul {
+ left: 100%;
+ top: 0;
+}
+
+
+#nav li ul
